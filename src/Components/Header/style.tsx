@@ -6,7 +6,6 @@ export const Container = styled.header`
     justify-content: space-between;
     align-items: center;
     background: ${({ theme }) => theme.colors.primary100}; 
-    padding-inline: 221px;
     height: 64px;
 `;
 
@@ -40,14 +39,26 @@ export const Title = styled.h5`
 `
 
 export const Button = styled.button`
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
     padding: 15px 25px;
     width: 137px;
     height: 52px;
-    background: ${({ theme }) => theme.colors.secondary100};
+    background: ${({ theme }) => theme.colors.primary200};
     border-radius: 5px;
     font-weight: ${({theme})=> theme.fontWeight.bold};
     font-size:  ${({ theme }) => theme.fontSizes.paragraphP4};
     line-height: 22px;
     letter-spacing: 0.2px;
-    color: ${({theme})=> theme.colors.white};
+    color: ${({ theme }) => theme.colors.white};
+    transition: 500ms ease;
+
+    &:hover{
+        background-color: #4282CF;
+    }
+`
+export const ArrowRightImage = styled.img`
+
 `
