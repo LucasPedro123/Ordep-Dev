@@ -14,18 +14,19 @@ export const ThemeGlobal: DefaultTheme = {
         main: 'Inter, sans-serif',
     },
     fontSizes: {
-        headline100: 72,
-        headline200: 64,
-        headline300: 54,
-        headline400: 36,
-        headline500: 28,
-        paragraphP1: 24,
-        paragraphP2: 18,
-        paragraphP3: 16,
-        paragraphP4: 13,
+        headline100: '72px',
+        headline200: '64px',
+        headline300: '54px',
+        headline400: '36px',
+        headline500: '28px',
+        paragraphP1: '24px',
+        paragraphP2: '18px',
+        paragraphP3: '16px',
+        paragraphP4: '13px',
     },
     fontWeight: {
         bold: 700,
+        semibold: 600,
         medium: 500,
         regular: 400
     }
