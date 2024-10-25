@@ -14,7 +14,6 @@ export const GlobalStyle = createGlobalStyle`
     main, section, header, footer {
         padding-inline: 221px; 
        
-        background-color: ${({ theme }) => theme.colors.primary100};
 
         @media screen and (max-width: 1440px) {
             padding-inline: 32px; 
