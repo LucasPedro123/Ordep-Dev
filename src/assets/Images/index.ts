@@ -27,4 +27,7 @@ export { default as IconTechMongodb } from './tech-icon-mongodb.svg'
 export { default as IconArrowRight } from './icon-arrow-right.svg'
 
 // Lines
-export {default as LineBackground} from './lines-image.svg'
+export { default as LineBackground } from './lines-image.svg'
+
+// Sections Images
+export { default as SectionImage1 } from './image-section-web-solution.svg'
