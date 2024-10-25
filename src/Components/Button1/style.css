@@ -1,0 +1,64 @@
+.btn {
+    position: relative;
+    border: none;
+    width: 200px;
+    height: 60px;
+    background-color: #458FF6;
+    border-radius: 55px;
+    color: white;
+    border: 1.4px solid #458FF6;
+    z-index: 1;
+    transition: 500ms ease;
+    overflow: hidden;
+}
+
+.text-1{
+    color: #fff;
+}
+
+.text-2 {
+    position: absolute;
+}
+
+.text-2 {
+    color: #458FF6;
+    bottom: -250%;
+    transform: translateX(-50%) translateY(-50%);
+    left: 50%;
+    transition: 500ms ease;
+
+}
+
+.btn:before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 200%;
+    width: 200%;
+    border-radius: 50%;
+    background-color: white;
+    transition: 500ms ease;
+    z-index: -1;
+}
+
+.btn:is(:hover, :focus):before {
+    bottom: -10%;
+}
+
+.btn:is(:hover, :focus-visible) .text-2 {
+    z-index: 2;
+    bottom: 50%;
+    transform: translateY(50%) translateX(-50%);
+}
+
+
+.btn a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 60px;
+}
