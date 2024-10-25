@@ -1,4 +1,4 @@
-.btn {
+.btn1 {
     position: relative;
     border: none;
     width: 200px;
@@ -12,15 +12,15 @@
     overflow: hidden;
 }
 
-.text-1{
+.span-1{
     color: #fff;
 }
 
-.text-2 {
+.span-2 {
     position: absolute;
 }
 
-.text-2 {
+.span-2 {
     color: #458FF6;
     bottom: -250%;
     transform: translateX(-50%) translateY(-50%);
@@ -29,7 +29,7 @@
 
 }
 
-.btn:before {
+.btn1:before {
     content: "";
     position: absolute;
     bottom: 100%;
@@ -43,18 +43,18 @@
     z-index: -1;
 }
 
-.btn:is(:hover, :focus):before {
+.btn1:is(:hover, :focus):before {
     bottom: -10%;
 }
 
-.btn:is(:hover, :focus-visible) .text-2 {
+.btn1:is(:hover, :focus-visible) .span-2 {
     z-index: 2;
     bottom: 50%;
     transform: translateY(50%) translateX(-50%);
 }
 
 
-.btn a {
+.btn1 .span-2, .span-1 {
     width: 100%;
     height: 100%;
     text-decoration: none;
