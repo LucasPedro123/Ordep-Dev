@@ -1,4 +1,4 @@
-import { LogoWhite } from '../../assets/Images'
+import { IconArrowRight, LogoWhite } from '../../assets/Images'
 import * as S from './style'
 
 
@@ -15,7 +15,7 @@ export const Header: React.FC = () => {
                 <S.NavLinks to={'/'}>Sobre</S.NavLinks>
             </S.Nav>
             <S.Button>
-                Contatos →
+                Contatos <S.ArrowRightImage src={IconArrowRight} />
             </S.Button>
         </S.Container>
     )
