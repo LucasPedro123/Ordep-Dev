@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import './style.css'
 
-const Button1 = ({content, link} : {content: string, link : string}) => {
+export const Button2 = ({content, link} : {content: string, link : string}) => {
     
     return (
         <button className='btn'>
@@ -10,5 +10,3 @@ const Button1 = ({content, link} : {content: string, link : string}) => {
         </button>    
     )
 }
-
-export default Button1;
