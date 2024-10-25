@@ -3,7 +3,7 @@ export { default as LogoWhite } from './logo-icon-white.svg'
 export { default as LogoBlue } from './logo-icon-blue.svg'
 
 // Hero
-export { default as HeroImage } from './hero-image.svg'
+export { default as MainImage } from './main-image.svg'
 
 // IconCards
 export {default as IconCardDocumentation} from './icon-documentation.svg'
@@ -21,4 +21,10 @@ export { default as IconTechAspNet } from './tech-icon-aspnet.svg'
 export { default as IconTechReact } from './tech-icon-react.svg'
 export { default as IconTechFirebase } from './tech-icon-firebase.svg'
 export { default as IconTechAzure } from './tech-icon-azure.svg'
-export { default as IconTechMongodb} from './tech-icon-mongodb.svg'
+export { default as IconTechMongodb } from './tech-icon-mongodb.svg'
+
+// Arrow
+export { default as IconArrowRight } from './icon-arrow-right.svg'
+
+// Lines
+export {default as LineBackground} from './lines-image.svg'
