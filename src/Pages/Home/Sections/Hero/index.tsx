@@ -1,5 +1,5 @@
 import {MainImage } from '../../../../assets/Images';
-import {Button1} from '../../../../Components/Button1';
+import {Button3} from '../../../../Components/Button';
 import * as S from './style';
 
 const Hero: React.FC = () => {
@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
                         Desenvolvimento de software sob medida para dar vida às suas ideias, em apps
                         móveis, sites ou páginas otimizadas. Crie a solução ideal para o seu negócio.
                     </S.Description>
-                    <Button1 content='Comece Agora' link='/'/>
+                    <Button3 content='Comece Agora' link='/'/>
                 </S.Wrapper>
                 <S.ImageContainer>
                     <S.HeroImage src={MainImage} alt='Imagem principal' />

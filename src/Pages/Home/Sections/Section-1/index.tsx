@@ -1,5 +1,5 @@
 import { SectionImage1 } from '../../../../assets/Images';
-import {Button2} from '../../../../Components/Button2';
+import {Button2} from '../../../../Components/Button';
 import * as S from './style';
 
 const SectionWebSolution: React.FC = () => {
