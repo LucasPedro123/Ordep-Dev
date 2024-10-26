@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.main`
-    background-color: ${({ theme }) => theme.colors.primary100};
+    background-color: ${({ theme }) => theme.colors.secondary500};
     height: 728px;
+    width: 100%;
     z-index: 2;
     @media screen and (max-width: 1440px){
         height: 525px;

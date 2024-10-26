@@ -5,7 +5,7 @@ export const Container = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: ${({ theme }) => theme.colors.primary100}; 
+    background: ${({ theme }) => theme.colors.secondary500}; 
     height: 64px;
 `;
 
@@ -46,7 +46,7 @@ export const Button = styled.button`
     padding: 15px 25px;
     width: 137px;
     height: 52px;
-    background: ${({ theme }) => theme.colors.primary200};
+    background: ${({ theme }) => theme.colors.primary500};
     border-radius: 5px;
     font-weight: ${({theme})=> theme.fontWeight.bold};
     font-size:  ${({ theme }) => theme.fontSizes.paragraphP4};
@@ -56,7 +56,7 @@ export const Button = styled.button`
     transition: 500ms ease;
 
     &:hover{
-        background-color: #4282CF;
+        background-color: ${({theme})=> theme.colors.primary700};
     }
 `
 export const ArrowRightImage = styled.img`
