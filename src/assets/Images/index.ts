@@ -31,3 +31,4 @@ export { default as LineBackground } from './lines-image.svg'
 
 // Sections Images
 export { default as SectionImage1 } from './image-section-web-solution.svg'
+export { default as SectionImage2 } from './image-section-mobile-solution.svg'
