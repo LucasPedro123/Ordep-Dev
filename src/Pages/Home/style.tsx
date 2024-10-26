@@ -24,7 +24,7 @@ export const Card = styled.div`
 `
 
 export const CardImageContainer = styled.div`
-    border: 1px solid ${({theme})=> theme.colors.primary200};
+    border: 1px solid ${({theme})=> theme.colors.primary500};
     border-radius: 100%;
     width: 58px;
     height: 58px;
