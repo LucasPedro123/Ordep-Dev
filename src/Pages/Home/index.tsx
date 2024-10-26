@@ -2,6 +2,8 @@ import { IconCardDocumentation, IconCardSupport } from "../../assets/Images"
 import { Header } from "../../Components/Header"
 import Hero from "./Sections/Hero"
 import SectionWebSolution from "./Sections/Section-1"
+import SectionMobileSolution from "./Sections/Section-2"
+import SectionService from "./Sections/Section-service"
 import * as S from './style'
 
 export const Home: React.FC = () => {
@@ -39,7 +41,9 @@ export const Home: React.FC = () => {
                 }
             </S.Cards>
             <S.LineBg />
-            <SectionWebSolution/>
+            <SectionWebSolution />
+            <SectionMobileSolution />
+            <SectionService/>
         </>
     )
 }
