@@ -12,11 +12,11 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     main, section, header, footer {
-        padding-inline: 221px; 
+        padding-inline: 10%; 
        
 
         @media screen and (max-width: 1440px) {
-            padding-inline: 32px; 
+            padding-inline: 4%; 
         }
     }
 
