@@ -1,3 +1,4 @@
+import { LogoWhite } from '../../assets/Images'
 import * as S from './style'
 
 export const Footer: React.FC = () => {
@@ -5,7 +6,10 @@ export const Footer: React.FC = () => {
         <S.Container>
             <S.Content>
                 <S.WrapperText>
-                    <S.Title>Ordep Dev</S.Title>
+                    <S.Linked to={'/'}>
+                        <S.Logo src={LogoWhite} />
+                        <S.Title>Ordep Dev</S.Title>
+                    </S.Linked>
                     <S.Description>Ordep Dev was created for the new ways we live and work. We make a better workspace around the world</S.Description>
                 </S.WrapperText>
                 <S.Column>

@@ -27,10 +27,11 @@ export const Logo = styled.img`
     height: 29px;
 `
 
-export const Wrapper = styled.div`
+export const Wrapper = styled(Link)`
     display: flex;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
 `
 
 export const Title = styled.h5`

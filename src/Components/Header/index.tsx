@@ -5,7 +5,7 @@ import * as S from './style'
 export const Header: React.FC = () => {
     return (
         <S.Container>
-            <S.Wrapper>
+            <S.Wrapper to={'/'}>
                 <S.Logo src={LogoWhite} />
                 <S.Title>Ordep Dev</S.Title>
             </S.Wrapper>

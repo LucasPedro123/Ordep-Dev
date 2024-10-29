@@ -11,6 +11,16 @@ export const Container = styled.footer`
     background-color: ${({theme})=> theme.colors.secondary500};
 `
 
+export const Logo = styled.img`
+    width: 37px;
+    height: 29px;
+`
+
+export const Linked = styled(Link)`
+    display: flex;
+    gap: 10px;
+`
+
 export const Title = styled.h1`
     font-weight: ${({theme})=> theme.fontWeight.bold};
     font-size: ${({theme})=> theme.fontSizes.headline500};
