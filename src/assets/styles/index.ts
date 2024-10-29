@@ -29,7 +29,7 @@ export const GlobalStyle = createGlobalStyle`
         text-decoration: none;
     }
 
-    button {
+    button, i {
         cursor: pointer;
         border: none;
     }
