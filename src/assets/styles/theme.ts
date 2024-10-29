@@ -28,6 +28,7 @@ export const ThemeGlobal: DefaultTheme = {
         gray: '#212529',
         white: '#FFFFFF',
         neutral50: '#797676',
+        neutral40: '#605E5E',
         dark: '#000000',
         yellowLight: '#FFE492',
         blueLight: '#FFE492',
