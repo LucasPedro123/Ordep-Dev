@@ -6,6 +6,11 @@ export const Container = styled.section`
     align-items: center;
     margin-top: 150px;
     height: 100%;
+
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        gap: 50px;
+    }
 `
 
 export const Wrapper = styled.article`
@@ -13,12 +18,20 @@ export const Wrapper = styled.article`
     flex-direction: column;
     gap: 60px;
     width: 50%;
+    @media screen and (max-width: 768px){
+        width: 100%;
+    }   
 `
 
 export const Content = styled.div`
     display: flex;
     flex-direction: column;
     gap: 24px;
+
+    @media screen and (max-width: 768px){
+        align-items: center;
+        text-align: center;
+    }
 `
 
 export const Title = styled.h1`
@@ -26,6 +39,9 @@ export const Title = styled.h1`
     font-size: ${({theme})=> theme.fontSizes.headline100};
     line-height: 84px;
     color: ${({ theme }) => theme.colors.gray};
+    @media screen and (max-width: 768px){
+        font-size: ${({theme})=> theme.fontSizes.headline300};
+    }
 `
 
 export const Description = styled.p`
