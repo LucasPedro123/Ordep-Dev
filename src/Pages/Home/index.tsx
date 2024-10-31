@@ -45,7 +45,6 @@ export const Home: React.FC = () => {
                     ))
                 }
             </S.Cards>
-            <S.LineBg />
             <SectionWebSolution />
             <SectionMobileSolution />
             <SectionService />
