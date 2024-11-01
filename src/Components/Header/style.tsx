@@ -13,6 +13,10 @@ export const Nav = styled.nav`
     display: flex;
     align-items: center;
     gap: 32px;
+    
+    @media screen and (max-width: 768px){
+        display: none;
+    }
 `
 
 export const NavLinks = styled(Link)`
@@ -58,6 +62,10 @@ export const Button = styled.button`
 
     &:hover{
         background-color: ${({theme})=> theme.colors.primary700};
+    }
+
+    @media screen and (max-width: 768px){
+        display: none;
     }
 `
 export const ArrowRightImage = styled.img`

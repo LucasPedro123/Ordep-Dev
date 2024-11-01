@@ -4,13 +4,24 @@ export const Container = styled.section`
     display: flex;
     justify-content: space-between;
     margin-top: 150px;
+
+    @media screen and (max-width: 768px){
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        gap: 60px;
+    }
 `
 export const Title = styled.h1`
     font-weight: ${({theme})=> theme.fontWeight.bold};
     font-size: ${({theme})=> theme.fontSizes.headline100};
     line-height: 87px;
     letter-spacing: -0.02em;
-    color: ${({theme})=> theme.colors.gray};
+    color: ${({ theme }) => theme.colors.gray};
+    
+    @media screen and (max-width: 768px){
+        font-size: ${({theme})=> theme.fontSizes.headline300};
+    }
 `
 
 export const Description = styled.p`
@@ -47,5 +58,9 @@ export const Image = styled.img`
     max-width: 600px;
     @media screen and (max-width: 1440px) {
         width: 500px;
+    }
+
+    @media screen  and (max-width: 768px) {
+        width: 100%;
     }
 `

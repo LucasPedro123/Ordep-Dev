@@ -7,6 +7,15 @@ export const Cards = styled.div`
     justify-content: center;
     gap: 30px;
     margin-top: -45px;
+    padding-inline: 20px;
+    @media screen and (max-width: 1440px){
+        margin-top: -17px;
+    }
+
+    @media screen and (max-width: 768px){
+        flex-direction:  column;
+        align-items: center;
+    }
 `
 
 export const Card = styled.div`
@@ -21,6 +30,10 @@ export const Card = styled.div`
     height: 271px;
     background:  ${({theme})=> theme.colors.white};
     box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+
+    @media screen and (max-width: 768px){
+        width: 100%;
+    }
 `
 
 export const CardImageContainer = styled.div`
