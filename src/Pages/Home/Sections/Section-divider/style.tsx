@@ -24,6 +24,10 @@ export const Title = styled.h1`
     color:  ${({theme})=> theme.colors.white};
     line-height: 87px;
     text-align: center;
+
+    @media screen and (max-width: 768px){
+        font-size: ${({theme})=> theme.fontSizes.headline300};
+    }
 `
 export const Description = styled.h1`
     font-size: ${({theme})=> theme.fontSizes.paragraphP2};

@@ -8,7 +8,9 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        font-family: ${({ theme }) => theme.fonts.main}; 
+        font-family: ${({ theme }) => theme.fonts.main};
+        display: grid;
+        place-items: center;
     }
 
     main, section, header, footer {
@@ -17,6 +19,12 @@ export const GlobalStyle = createGlobalStyle`
 
         @media screen and (max-width: 1440px) {
             padding-inline: 4%; 
+        }
+        @media screen and (max-width: 768px) {
+            padding-inline: 20px; 
+        }
+        @media screen and (max-width: 320px) {
+            padding-inline: 15px; 
         }
     }
 

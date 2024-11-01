@@ -15,6 +15,15 @@ export const Content = styled.div`
     background: ${({theme})=> theme.colors.white};
     box-shadow: 0px 59px 124px rgba(0, 0, 0, 0.12);
     border-radius: 15px;
+
+    @media screen  and (max-width: 768px) {
+        flex-direction: column;
+        padding: 64px;
+    }
+    @media screen  and (max-width: 320px) {
+        flex-direction: column;
+        padding: 64px;
+    }
 `
 
 export const Title = styled.h1`
@@ -38,17 +47,30 @@ export const Wrapper = styled.div`
     flex-direction: column;
     gap: 35px;
     width: 431px;
+
+    @media screen  and (max-width: 768px) {
+        width: 100%;
+    }
 `
 
 export const WrapperText = styled.article`
     display: flex;
     flex-direction: column;
     gap: 16px;
+
+    @media screen  and (max-width: 768px) {
+        text-align: center;
+    }
 `
 export const Cards = styled.div`
     display: flex;
     flex-direction: column;
     gap: 12px;
+
+    @media screen  and (max-width: 768px) {
+        align-items: center;
+        width: 100%;
+    }  
 `
 export const Card = styled.div`
     width: 336px;
@@ -59,6 +81,10 @@ export const Card = styled.div`
     padding: 24px;
     display: flex;
     gap: 13px;
+
+    @media screen  and (max-width: 480px) {
+        width: 100%;
+    }
 `
 
 export const CardWrapper = styled.div`
@@ -90,6 +116,11 @@ export const Icon = styled.i`
 export const WrapperIcons = styled.div`
     display: flex;
     gap: 42px;
+
+    @media screen  and (max-width: 768px) {
+        justify-content: center;
+        width: 100%;
+    }
 `
 export const CardTitle = styled.p`
     font-weight: ${({theme})=> theme.fontWeight.regular};
@@ -109,6 +140,9 @@ export const FormContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 50px;
+    @media screen  and (max-width: 768px) {
+        width: 100%;
+    }
 `
 
 export const FormDescription = styled.p`
@@ -149,7 +183,7 @@ export const InputBudget = styled.input`
     width: 60%;
     font-size:  ${({theme})=> theme.fontSizes.paragraphP2};
     border-bottom: 1.5px solid ${({theme})=> theme.colors.neutral50};
-
+   
     &:focus{
         outline: none;
         border-bottom: 1.5px solid ${({ theme }) => theme.colors.primary500};
@@ -162,12 +196,20 @@ export const InputBudget = styled.input`
     &::placeholder{
         font-size:  ${({theme})=> theme.fontSizes.paragraphP2};
     }
+
+    @media screen  and (max-width: 480px) {
+        width: 100%;
+    }
 `
 
 export const InputWrapper = styled.div`
     display: flex;
     gap: 24px;
     justify-content: space-between;
+
+    @media screen  and (max-width: 480px) {
+        flex-direction: column;
+    }
 `
 
 export const Button = styled.button`
@@ -187,6 +229,10 @@ export const Button = styled.button`
 
     &:hover{
         background-color: ${({theme})=> theme.colors.primary700};
+    }
+
+    @media screen  and (max-width: 768px) {
+        align-self: center;
     }
 `
 

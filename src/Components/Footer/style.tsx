@@ -39,6 +39,17 @@ export const Content = styled.div`
     justify-content: space-between;
     width: 100%;
     height: 169px;
+
+    @media screen  and (max-width: 768px) {
+        flex-direction: column;
+        height: 100%;
+        gap: 100px;
+    }
+
+    @media screen  and (max-width: 320px) {
+        align-items: center;
+        text-align: center;
+    }
 `
 
 export const WrapperText = styled.div`
@@ -46,6 +57,10 @@ export const WrapperText = styled.div`
     flex-direction: column;
     gap: 15px;
     width: 240px;
+
+    @media screen  and (max-width: 768px) {
+        align-items: center;
+    }
 `
 
 export const Column = styled.div`
@@ -63,13 +78,13 @@ export const ColumnName = styled.p`
 
 export const Value = styled(Link)`
     font-weight: ${({theme})=> theme.fontWeight.regular};
-    font-size: ${({theme})=> theme.fontSizes.paragraphP3};
+    font-size: ${({theme})=> theme.fontSizes.paragraphP2};
     color:  ${({theme})=> theme.colors.white};
     line-height: 20px;
 `
 export const Description2 = styled.p`
     font-weight: ${({theme})=> theme.fontWeight.regular};
-    font-size: ${({theme})=> theme.fontSizes.paragraphP3};
+    font-size: ${({theme})=> theme.fontSizes.paragraphP2};
     color:  ${({theme})=> theme.colors.white};
     line-height: 20px;
 `
@@ -139,4 +154,8 @@ export const Wrapper = styled.div`
     padding-top: 20px;
     border-top: 1px solid ${({theme})=> theme.colors.secondary400};
     width: 100%;
+
+    @media screen  and (max-width: 768px) {
+        text-align: center;
+    }
 `

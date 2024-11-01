@@ -24,6 +24,10 @@ export const Wrapper = styled.div`
 export const Cards = styled.div`
     display: flex;
     gap: 20px;
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        align-items: center;
+    }
 `
 export const Card = styled.div`
     width: 100%;

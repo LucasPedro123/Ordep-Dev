@@ -8,6 +8,11 @@ export const Container = styled.main`
     @media screen and (max-width: 1440px){
         height: 525px;
     }
+
+    @media screen and (max-width: 768px){
+        padding-block: 100px;
+        height: 100%;
+    }
 `
 
 export const Content = styled.div`
@@ -15,7 +20,10 @@ export const Content = styled.div`
     justify-content: space-between;
     align-items: center;
     height: 100%;
-
+    @media screen and (max-width: 768px){
+        flex-direction:  column;
+        gap: 50px;
+    }
 `
 
 export const Title = styled.h2`
@@ -23,7 +31,11 @@ export const Title = styled.h2`
     font-size: ${(({theme})=> theme.fontSizes.headline200)};
     color: ${({theme})=>theme.colors.white};
     line-height: 77px;
-    letter-spacing: -0.02em;
+
+    @media screen and (max-width: 768px){
+        font-size: ${(({theme})=> theme.fontSizes.headline300)};
+
+    }
 `
 
 export const Description = styled.p`
@@ -40,13 +52,17 @@ export const Wrapper = styled.article`
     gap: 40px;
     max-width: 731px;
     width: 100%;
-
+    @media screen and (max-width: 768px){
+        align-items: center;
+        text-align: center;
+    }
 `
 
 
 export const HeroImage = styled.img`
     object-fit: contain; 
     pointer-events: none;
+    width: 100%;
 `;
 
 export const ImageContainer = styled.div`

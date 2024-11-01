@@ -25,6 +25,9 @@ export const Cards = styled.div`
     display: grid;
     gap: 37px;
     grid-template-columns: repeat(2, 1fr);
+    @media screen and (max-width: 768px){
+        grid-template-columns: repeat(1, 1fr);
+    }
 `
 
 export const Card = styled.div`
@@ -37,6 +40,10 @@ export const Card = styled.div`
 
     display: flex;
     flex-direction: column;
+
+    @media screen and (max-width: 768px){
+        width: 100%;
+    }
 `
 
 export const CardTitle = styled.p`
