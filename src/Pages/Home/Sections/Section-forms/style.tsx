@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { IconPapperSubmit } from '../../../../assets/Images';
 
 export const Container = styled.section`
+    margin-top: 150px;
 `
 export const Content = styled.div`
     width: 100%;

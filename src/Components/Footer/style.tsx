@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import { IconPapperSubmit } from "../../assets/Images";
 
 export const Container = styled.footer`
+    margin-top: 150px;
     padding-top: 140px;
     padding-bottom: 32px;
     gap: 80px;
