@@ -1,3 +1,4 @@
+import { CardVariants } from '../../../../animations/animations.motion';
 import { IconServiceDesktop, IconServiceLandingpage, IconServiceMobile, IconServiceWeb } from '../../../../assets/Images';
 import * as S from './style'
 
@@ -25,20 +26,24 @@ const SectionService: React.FC = () => {
         },
     ]
 
-
     return (
         <S.Container>
             <S.Title>Our services</S.Title>
             <S.Description>We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health</S.Description>
             <S.Cards>
                 {
-                    cardServicesInfo.map((e) => (
-                        <S.Card>
+                    cardServicesInfo.map((e, i) => (
+                        <S.Card
+                            variants={CardVariants}
+                            initial="initial"
+                            whileInView="animate"
+                            exit="exit"
+                            transition={{ duration: 0.3 * i}}
+                        >
                             <S.ImageContainer>
                                 <S.CardImage src={e.image} />
                             </S.ImageContainer>
                             <S.Wrapper>
-
                                 <S.CardTitle>{e.title}</S.CardTitle>
                                 <S.CardDescription>{e.description}</S.CardDescription>
                             </S.Wrapper>
