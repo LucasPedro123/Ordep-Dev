@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { LineBackground } from '../../assets/Images'
+import { motion } from 'framer-motion'
 
 
 export const Cards = styled.div`
@@ -7,18 +8,27 @@ export const Cards = styled.div`
     justify-content: center;
     gap: 30px;
     margin-top: -45px;
-    padding-inline: 20px;
-    @media screen and (max-width: 1440px){
+    padding-inline: 10%; 
+       
+
+    @media screen and (max-width: 1440px) {
+        padding-inline: 4%; 
         margin-top: -17px;
     }
-
+    
     @media screen and (max-width: 768px){
         flex-direction:  column;
+        padding-inline: 20px; 
         align-items: center;
+    }
+
+    @media screen and (max-width: 320px) {
+        padding-inline: 15px; 
     }
 `
 
-export const Card = styled.div`
+
+export const Card = styled(motion.div)`
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -28,7 +38,7 @@ export const Card = styled.div`
 
     width: 381px;
     height: 271px;
-    background:  ${({theme})=> theme.colors.white};
+    background:  ${({ theme }) => theme.colors.white};
     box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
 
     @media screen and (max-width: 768px){
@@ -37,7 +47,7 @@ export const Card = styled.div`
 `
 
 export const CardImageContainer = styled.div`
-    border: 1px solid ${({theme})=> theme.colors.primary500};
+    border: 1px solid ${({ theme }) => theme.colors.primary500};
     border-radius: 100%;
     width: 58px;
     height: 58px;
@@ -58,15 +68,15 @@ export const CardImage = styled.img`
 `
 
 export const CardTitle = styled.h5`
-    font-weight: ${({theme})=>theme.fontWeight.semibold};
-    font-size: ${({theme})=>theme.fontSizes.paragraphP1};
+    font-weight: ${({ theme }) => theme.fontWeight.semibold};
+    font-size: ${({ theme }) => theme.fontSizes.paragraphP1};
     line-height: 36px;
-    color: ${({theme})=>theme.colors.gray};
+    color: ${({ theme }) => theme.colors.gray};
 `
 export const CardDescription = styled.h5`
-    font-weight: ${({theme})=>theme.fontWeight.regular};
-    font-size: ${({theme})=>theme.fontSizes.paragraphP3};
-    color: ${({theme})=>theme.colors.gray};
+    font-weight: ${({ theme }) => theme.fontWeight.regular};
+    font-size: ${({ theme }) => theme.fontSizes.paragraphP3};
+    color: ${({ theme }) => theme.colors.gray};
     line-height: 20px;
     letter-spacing: -0.02em;
 `
