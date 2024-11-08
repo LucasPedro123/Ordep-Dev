@@ -10,6 +10,7 @@ const Hero: React.FC = () => {
 
     return (
         <S.Container>
+            <S.BackgroundTop/>
             <S.Content>
                 <Wrapper
                     initial={{ opacity: 0, x: -100 }}
