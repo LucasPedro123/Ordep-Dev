@@ -1,9 +1,16 @@
+import { fadeInUp } from '../../../../animations/animations.motion'
 import { IconLocation } from '../../../../assets/Images'
 import * as S from './style'
 
 export const SectionForms: React.FC = () => {
     return (
-        <S.Container>
+        <S.Container
+            variants={fadeInUp}
+            initial={fadeInUp.initial}
+            whileInView={fadeInUp.animate}
+            exit={fadeInUp.exit}
+            transition={fadeInUp.transition}
+        >
             <S.Content>
                 <S.Wrapper>
                     <S.WrapperText>
@@ -40,24 +47,24 @@ export const SectionForms: React.FC = () => {
                         </S.Card>
                     </S.Cards>
                     <S.WrapperIcons>
-                        <S.Icon className='fa-brands fa-instagram'/>
-                        <S.Icon className='fa-brands fa-github'/>
-                        <S.Icon className='fa-brands fa-linkedin-in'/>
+                        <S.Icon className='fa-brands fa-instagram' />
+                        <S.Icon className='fa-brands fa-github' />
+                        <S.Icon className='fa-brands fa-linkedin-in' />
                     </S.WrapperIcons>
                 </S.Wrapper>
                 <S.FormContainer>
                     <S.FormDescription>Preencha o formulário abaixo e te responderei o mais breve possível.</S.FormDescription>
                     <S.Form>
-                        <S.Input id='name' name='name' placeholder='Nome*' type='text'/>
-                        <S.Input id='email' name='email' placeholder='Email*' type='email'/>
-                        <S.Input id='location' name='location' placeholder='Localização*' type='text'/>
+                        <S.Input id='name' name='name' placeholder='Nome*' type='text' />
+                        <S.Input id='email' name='email' placeholder='Email*' type='email' />
+                        <S.Input id='location' name='location' placeholder='Localização*' type='text' />
                         <S.InputWrapper>
-                            <S.InputBudget id='budget' name='budget' placeholder='Orçamento*' type='number'/>
-                            <S.Input id='subject' name='subject' placeholder='Assunto*' type='text'/>
+                            <S.InputBudget id='budget' name='budget' placeholder='Orçamento*' type='number' />
+                            <S.Input id='subject' name='subject' placeholder='Assunto*' type='text' />
                         </S.InputWrapper>
-                        <S.Input id='message' name='message' placeholder='Mensagem*' type='text'/>
+                        <S.Input id='message' name='message' placeholder='Mensagem*' type='text' />
                     </S.Form>
-                    <S.Button>Enviar <S.IconButton/></S.Button>
+                    <S.Button>Enviar <S.IconButton /></S.Button>
                 </S.FormContainer>
             </S.Content>
         </S.Container>
