@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
 export const Container = styled.section`
@@ -29,7 +30,7 @@ export const Cards = styled.div`
         align-items: center;
     }
 `
-export const Card = styled.div`
+export const Card = styled(motion.div)`
     width: 100%;
     height: 498px;
     background-color: ${({theme})=> theme.colors.white};
