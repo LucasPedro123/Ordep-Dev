@@ -1,6 +1,7 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
-export const Container = styled.section`
+export const Container = styled(motion.section)`
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,7 +14,7 @@ export const Container = styled.section`
     }
 `
 
-export const Wrapper = styled.article`
+export const Wrapper = styled(motion.article)`
     display: flex;
     flex-direction: column;
     gap: 60px;
@@ -51,7 +52,7 @@ export const Description = styled.p`
     line-height: 30px;
 `
 
-export const IconWrapper = styled.div`
+export const IconWrapper = styled(motion.div)`
     width: 582px;
     height: 470px;
     position: relative;
