@@ -26,6 +26,16 @@ export const Content = styled.div`
     }
 `
 
+export const BackgroundTop = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 84px;
+
+    width: 100%;
+    background: ${({ theme }) => theme.colors.secondary500}; 
+`
+
 export const Title = styled.h2`
     font-weight: ${({theme})=>theme.fontWeight.bold};
     font-size: ${(({theme})=> theme.fontSizes.headline200)};
