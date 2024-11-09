@@ -12,6 +12,15 @@ export const Container = styled(motion.section)`
         flex-direction: column;
         gap: 50px;
     }
+
+    @keyframes rotateAnimation {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
 `
 
 export const Wrapper = styled(motion.article)`
@@ -62,7 +71,7 @@ export const TechIcon = styled.img`
     height: 50%;
 `
 
-export const IconCircle1 = styled.div`
+export const IconCircle1 = styled(motion.div)`
     width: 72.75px;
     height: 72.75px;
     border-radius: 100%;
@@ -72,11 +81,25 @@ export const IconCircle1 = styled.div`
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 0;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+`
+export const IconCircle2 = styled(motion.div)`
+    width: 72.75px;
+    height: 72.75px;
+    border-radius: 100%;
+    background: ${({ theme }) => theme.colors.primary50};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%);
+    top: 0%;
 `
-export const IconCircle2 = styled.div`
+export const IconCircle3 = styled(motion.div)`
     width: 72.75px;
     height: 72.75px;
     border-radius: 100%;
@@ -85,24 +108,12 @@ export const IconCircle2 = styled.div`
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 20%;
-    top: 30%;
-`
-export const IconCircle3 = styled.div`
-    width: 72.75px;
-    height: 72.75px;
-    border-radius: 100%;
-    background: ${({ theme }) => theme.colors.primary50};
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    right: 20%;
-    top: 30%;
-
+    right: 00%;
+    top: 50%;
+    transform: translateY(-50%);
 
 `
-export const IconCircle4 = styled.div`
+export const IconCircle4 = styled(motion.div)`
     border-radius: 100%;
     background: ${({ theme }) => theme.colors.primary50};
     display: flex;
@@ -114,8 +125,9 @@ export const IconCircle4 = styled.div`
     left: 50%;
     transform: translateX(-50%);
     bottom: 30%;
+    z-index: 99;
 `
-export const IconCircle5 = styled.div`
+export const IconCircle5 = styled(motion.div)`
     width: 72.75px;
     height: 72.75px;
     border-radius: 100%;
@@ -124,10 +136,11 @@ export const IconCircle5 = styled.div`
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 2%;
-    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0%;
 `
-export const IconCircle6 = styled.div`
+export const IconCircle6 = styled(motion.div)`
     width: 72.75px;
     height: 72.75px;
     border-radius: 100%;
@@ -140,7 +153,7 @@ export const IconCircle6 = styled.div`
     bottom: 0;
     transform: translateX(-50%);
 `
-export const IconCircle7 = styled.div`
+export const IconCircle7 = styled(motion.div)`
     width: 72.75px;
     height: 72.75px;
     border-radius: 100%;
@@ -149,11 +162,12 @@ export const IconCircle7 = styled.div`
     align-items: center;
     justify-content: center;
     position: absolute;
-    right: 2%;
-    top: 60%;
+    left: 50%;
+    transform: translate(-50%);
+    top: 0%;
 `
 
-export const ConnectorBorder1 = styled.div`
+export const ConnectorBorder1 = styled(motion.div)`
     position: absolute;
     width: 50%;
     height: 60%;
@@ -164,8 +178,8 @@ export const ConnectorBorder1 = styled.div`
     right: 36px;
     bottom: 0;
 
-    border: 2px dashed #4F9CF9;
-
+    border: 2px dashed ${({ theme }) => theme.colors.primary500};
+    
 `
 export const ConnectorBorder2 = styled.div`
     position: absolute;
@@ -179,7 +193,8 @@ export const ConnectorBorder2 = styled.div`
     left: 36px;
     bottom: 0;
 
-    border: 2px dashed #4F9CF9;
+    border: 2px dashed ${({ theme }) => theme.colors.primary500};
+
 
 `
 export const ConnectorBorder3 = styled.div`
@@ -193,5 +208,59 @@ export const ConnectorBorder3 = styled.div`
     top: 34px;
     left: 50%;
     transform: translateX(-50%);
-    border: 2px dashed #4F9CF9;
+    border: 2px dashed ${({ theme }) => theme.colors.primary500};
 `
+
+export const RotationContainer1 = styled(motion.div)`
+    position: absolute;
+    width: 60%;
+    height: 70%;
+    top: 3%;
+    left: 20%;
+    transform: translateX(-50%);
+    animation: rotateAnimation 10s linear infinite;
+`;
+export const RotationContainer2 = styled(motion.div)`
+    position: absolute;
+    width: 50%;
+    height: 70%;
+    left: 36px;
+    top: 35%;
+    animation: rotateAnimation 10s linear infinite;
+`;
+export const RotationContainer3 = styled(motion.div)`
+    position: absolute;
+    width: 60%;
+    height: 70%;
+    height: 70%;
+    top: 3%;
+    left: 20%;
+    animation: rotateAnimation 10s linear infinite reverse;
+`;
+export const RotationContainer4 = styled(motion.div)`
+    position: absolute;
+    width: 60%;
+    height: 70%;
+    left: 0%;
+    top: 35%;
+    transform: translateX(-50%);
+    animation: rotateAnimation 10s linear infinite reverse;
+`;
+export const RotationContainer5 = styled(motion.div)`
+    position: absolute;
+    width: 60%;
+    height: 70%;
+    right: 0%;
+    top: 35%;
+    
+    animation: rotateAnimation 10s linear infinite;
+`;
+export const RotationContainer6 = styled(motion.div)`
+    position: absolute;
+    width: 60%;
+    height: 70%;
+    right: 0%;
+    top: 35%;
+
+    animation: rotateAnimation 10s linear infinite reverse;
+`;

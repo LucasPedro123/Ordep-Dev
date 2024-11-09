@@ -21,27 +21,40 @@ export const SectionTech = () => {
                 <S.ConnectorBorder1 />
                 <S.ConnectorBorder2 />
                 <S.ConnectorBorder3 />
-                <S.IconCircle1>
-                    <S.TechIcon src={IconTechNode} />
-                </S.IconCircle1>
-                <S.IconCircle2>
-                    <S.TechIcon src={IconTechAzure} />
-                </S.IconCircle2>
-                <S.IconCircle3>
-                    <S.TechIcon src={IconTechFirebase} />
-                </S.IconCircle3>
+                <S.RotationContainer1 >
+                    <S.IconCircle1 >
+                        <S.TechIcon src={IconTechNode} />
+                    </S.IconCircle1>
+                </S.RotationContainer1>
+                <S.RotationContainer2 >
+                    <S.IconCircle2>
+                        <S.TechIcon src={IconTechAzure} />
+                    </S.IconCircle2>
+                </S.RotationContainer2>
+                <S.RotationContainer3>
+                    <S.IconCircle3>
+                        <S.TechIcon src={IconTechFirebase} />
+                    </S.IconCircle3>
+                </S.RotationContainer3>
                 <S.IconCircle4>
                     <S.TechIcon src={LogoBlue} />
                 </S.IconCircle4>
-                <S.IconCircle5>
-                    <S.TechIcon src={IconTechMongodb} />
-                </S.IconCircle5>
-                <S.IconCircle6>
-                    <S.TechIcon src={IconTechAspNet} />
-                </S.IconCircle6>
-                <S.IconCircle7>
-                    <S.TechIcon src={IconTechReact} />
-                </S.IconCircle7>
+
+                <S.RotationContainer4>
+                    <S.IconCircle5>
+                        <S.TechIcon src={IconTechMongodb} />
+                    </S.IconCircle5>
+                </S.RotationContainer4>
+                <S.RotationContainer5>
+                    <S.IconCircle6>
+                        <S.TechIcon src={IconTechAspNet} />
+                    </S.IconCircle6>
+                </S.RotationContainer5>
+                <S.RotationContainer6>
+                    <S.IconCircle7>
+                        <S.TechIcon src={IconTechReact} />
+                    </S.IconCircle7>
+                </S.RotationContainer6>
             </S.IconWrapper>
             <S.Wrapper
                 initial={{ opacity: 0, scale: 0.5 }}
