@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
 export const Container = styled.section`
@@ -12,7 +13,7 @@ export const Container = styled.section`
     margin-top: 150px;
 `
 
-export const Wrapper = styled.div`
+export const Wrapper = styled(motion.section)`
     display: flex;
     flex-direction: column;
     gap: 24px;

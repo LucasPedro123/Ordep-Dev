@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import { IconPapperSubmit } from '../../../../assets/Images';
+import { motion } from 'framer-motion';
 
-export const Container = styled.section`
+export const Container = styled(motion.section)`
     margin-top: 150px;
 `
 export const Content = styled.div`

@@ -1,6 +1,7 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
-export const Container = styled.section`
+export const Container = styled(motion.section)`
     display: flex;
     justify-content: space-between;
     margin-top: 150px;
@@ -49,7 +50,7 @@ export const Wrapper = styled.div`
     }
 `
 
-export const ImageContainer = styled.div`
+export const ImageContainer = styled(motion.div)`
 `
 
 export const Image = styled.img`
