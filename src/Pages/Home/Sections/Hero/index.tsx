@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
                     exit={{ scale: 0.5, y: 280, opacity: 0 }}
                     transition={{duration: 0.8}}
                 >
-                    <S.HeroImage src={MainImage} alt='Imagem principal' />
+                    <S.HeroImage src={MainImage} alt='Imagem de pessoas apontando para uma lâmpada' loading="lazy"/>
                 </ImageContainer>
             </S.Content>
          
