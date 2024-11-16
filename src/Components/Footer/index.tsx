@@ -1,4 +1,4 @@
-import { LogoWhite } from '../../assets/Images'
+import { IconPapperSubmit, LogoWhite } from '../../assets/Images'
 import * as S from './style'
 
 export const Footer: React.FC = () => {
@@ -7,7 +7,7 @@ export const Footer: React.FC = () => {
             <S.Content>
                 <S.WrapperText>
                     <S.Linked to={'/'}>
-                        <S.Logo src={LogoWhite} />
+                        <S.Logo src={LogoWhite} alt='Logo branca' loading="lazy" />
                         <S.Title>Ordep Dev</S.Title>
                     </S.Linked>
                     <S.Description>Ordep Dev was created for the new ways we live and work. We make a better workspace around the world</S.Description>
@@ -28,8 +28,8 @@ export const Footer: React.FC = () => {
                     <S.Title>Newsletter</S.Title>
                     <S.Description2>Deixe seu E-mail</S.Description2>
                     <S.InputWrapper>
-                        <S.Input placeholder='Seu E-mail' type='email' name='email'/>
-                        <S.Button><S.ImagePaper/></S.Button>
+                        <S.Input placeholder='Seu E-mail' type='email' name='email' />
+                        <S.Button><S.ImagePaper src={IconPapperSubmit} alt='ícone de papel de avião' /></S.Button>
                     </S.InputWrapper>
                 </S.WrapperForm>
             </S.Content>
