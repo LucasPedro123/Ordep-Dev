@@ -9,11 +9,10 @@ export const Container = styled.section`
     margin-top: 150px;
 `
 
-export const Title = styled.h1`
+export const Title = styled.h2`
     font-weight: ${({theme})=> theme.fontWeight.bold};
     font-size: ${({theme})=> theme.fontSizes.headline100};
     color: ${({theme})=> theme.colors.dark};
-    line-height: 87px;
     text-align: center;
 `
 
@@ -51,12 +50,10 @@ export const CardTitle = styled.p`
     font-weight: ${({theme})=> theme.fontWeight.semibold};
     font-size: ${({theme})=> theme.fontSizes.paragraphP1};
     color:  ${({theme})=> theme.colors.gray};
-    line-height: 36px;
 `
 export const CardDescription = styled.p`
     font-weight: ${({theme})=> theme.fontWeight.regular};
     font-size: ${({theme})=> theme.fontSizes.paragraphP3};
-    line-height: 20px;
 
     color: ${({ theme }) => theme.colors.neutral50};
 `

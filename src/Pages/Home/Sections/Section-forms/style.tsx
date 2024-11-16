@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { IconPapperSubmit } from '../../../../assets/Images';
 import { motion } from 'framer-motion';
 
 export const Container = styled(motion.section)`
@@ -28,19 +27,15 @@ export const Content = styled.div`
     }
 `
 
-export const Title = styled.h1`
+export const Title = styled.h2`
     font-weight: ${({theme})=> theme.fontWeight.bold};
     font-size: ${({theme})=> theme.fontSizes.headline400};
-    line-height: 87px;
-    letter-spacing: -0.02em;
     color: ${({theme})=> theme.colors.gray};
 `
 
 export const Description = styled.p`
     font-weight: ${({theme})=> theme.fontWeight.regular};
     font-size:  ${({theme})=> theme.fontSizes.paragraphP2};
-    line-height: 30px;
-    letter-spacing: -0.02em;
     color: ${({theme})=> theme.colors.neutral50};
 `
 
@@ -103,6 +98,8 @@ export const ImageContainer = styled.div`
 
 export const ImageIcon = styled.img`
     padding: 13px 15px;
+    width: 100%;
+    height: 100%;
 `
 
 export const Icon = styled.i`
@@ -128,7 +125,6 @@ export const CardTitle = styled.p`
     font-weight: ${({theme})=> theme.fontWeight.regular};
     font-size: ${({theme})=> theme.fontSizes.paragraphP4};
     color: ${({theme})=> theme.colors.neutral40};
-    line-height: 20px;
 `
 
 export const CardValue = styled.p`
@@ -238,10 +234,7 @@ export const Button = styled.button`
     }
 `
 
-export const IconButton = styled.div`
-    background-image: url(${IconPapperSubmit});
-    background-repeat: none;
-    background-size: 24px 24px;
+export const IconButton = styled.img`
     width: 24px;
     height: 24px;
 `

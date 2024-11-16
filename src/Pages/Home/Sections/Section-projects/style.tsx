@@ -5,10 +5,9 @@ export const Container = styled.section`
     margin-top: 150px;
 `
 
-export const Title = styled.h1`
+export const Title = styled.h2`
     font-weight: ${({theme})=> theme.fontWeight.bold};
     font-size: ${({theme})=> theme.fontSizes.headline100};
-    line-height: 84px;
     text-align: center;
     color: ${({ theme }) => theme.colors.gray};
     margin-bottom: 24px;
