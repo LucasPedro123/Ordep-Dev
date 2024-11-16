@@ -13,11 +13,9 @@ export const Container = styled(motion.section)`
         gap: 60px;
     }
 `
-export const Title = styled.h1`
+export const Title = styled.h2`
     font-weight: ${({theme})=> theme.fontWeight.bold};
     font-size: ${({theme})=> theme.fontSizes.headline100};
-    line-height: 87px;
-    letter-spacing: -0.02em;
     color: ${({ theme }) => theme.colors.gray};
     
     @media screen and (max-width: 768px){
@@ -28,8 +26,6 @@ export const Title = styled.h1`
 export const Description = styled.p`
     font-weight: ${({theme})=> theme.fontWeight.regular};
     font-size:  ${({theme})=> theme.fontSizes.paragraphP2};
-    line-height: 30px;
-    letter-spacing: -0.02em;
     color: ${({theme})=> theme.colors.gray};
 `
 

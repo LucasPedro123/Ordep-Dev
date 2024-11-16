@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { LineBackground } from '../../assets/Images'
 import { motion } from 'framer-motion'
 
 
@@ -67,26 +66,13 @@ export const CardImage = styled.img`
     object-fit: cover;
 `
 
-export const CardTitle = styled.h5`
+export const CardTitle = styled.h2`
     font-weight: ${({ theme }) => theme.fontWeight.semibold};
     font-size: ${({ theme }) => theme.fontSizes.paragraphP1};
-    line-height: 36px;
     color: ${({ theme }) => theme.colors.gray};
 `
-export const CardDescription = styled.h5`
+export const CardDescription = styled.p`
     font-weight: ${({ theme }) => theme.fontWeight.regular};
     font-size: ${({ theme }) => theme.fontSizes.paragraphP3};
     color: ${({ theme }) => theme.colors.gray};
-    line-height: 20px;
-    letter-spacing: -0.02em;
-`
-
-export const LineBg = styled.div`
-    position: absolute;
-    top: 244px;
-    background-image: url(${LineBackground});
-    background-repeat: none;
-    width: 100%;
-    height: 555px;
-    z-index: 0;
 `

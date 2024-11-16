@@ -1,5 +1,5 @@
 import { fadeInUp } from '../../../../animations/animations.motion'
-import { IconLocation } from '../../../../assets/Images'
+import { IconLocation, IconPapperSubmit } from '../../../../assets/Images'
 import * as S from './style'
 
 export const SectionForms: React.FC = () => {
@@ -20,7 +20,7 @@ export const SectionForms: React.FC = () => {
                     <S.Cards>
                         <S.Card>
                             <S.ImageContainer>
-                                <S.ImageIcon src={IconLocation} />
+                                <S.ImageIcon src={IconLocation} alt='Ícone de localização' loading="lazy" />
                             </S.ImageContainer>
                             <S.CardWrapper>
                                 <S.CardTitle>Endereço:</S.CardTitle>
@@ -29,7 +29,7 @@ export const SectionForms: React.FC = () => {
                         </S.Card>
                         <S.Card>
                             <S.ImageContainer>
-                                <S.ImageIcon src={IconLocation} />
+                                <S.ImageIcon src={IconLocation} alt='Ícone de localização' loading="lazy" />
                             </S.ImageContainer>
                             <S.CardWrapper>
                                 <S.CardTitle>E-mail:</S.CardTitle>
@@ -38,7 +38,7 @@ export const SectionForms: React.FC = () => {
                         </S.Card>
                         <S.Card>
                             <S.ImageContainer>
-                                <S.ImageIcon src={IconLocation} />
+                                <S.ImageIcon src={IconLocation} alt='Ícone de localização' loading="lazy" />
                             </S.ImageContainer>
                             <S.CardWrapper>
                                 <S.CardTitle>Telefone:</S.CardTitle>
@@ -64,7 +64,7 @@ export const SectionForms: React.FC = () => {
                         </S.InputWrapper>
                         <S.Input id='message' name='message' placeholder='Mensagem*' type='text' />
                     </S.Form>
-                    <S.Button>Enviar <S.IconButton /></S.Button>
+                    <S.Button>Enviar<S.IconButton src={IconPapperSubmit} alt='ícone de papel de avião' /></S.Button>
                 </S.FormContainer>
             </S.Content>
         </S.Container>

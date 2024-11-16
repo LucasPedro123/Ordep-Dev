@@ -38,7 +38,7 @@ export const Header: React.FC = () => {
     const { scrollY } = useScroll();
 
     useMotionValueEvent(scrollY, 'change', (latest) => {
-        if (!isOpen) {  
+        if (!isOpen) {
             const previous = scrollY.getPrevious();
             if (!previous) return;
 
@@ -62,7 +62,7 @@ export const Header: React.FC = () => {
             transition={{ duration: 0.35, ease: 'easeInOut' }}
         >
             <S.Wrapper to={'/'}>
-                <S.Logo src={LogoWhite} />
+                <S.Logo src={LogoWhite} alt='Logo Azul' loading="lazy" />
                 <S.Title>Ordep Dev</S.Title>
             </S.Wrapper>
             <S.Nav>
@@ -71,7 +71,7 @@ export const Header: React.FC = () => {
                 <S.NavLinks to={'/'}>Sobre</S.NavLinks>
             </S.Nav>
             <S.Button>
-                Contatos <S.ArrowRightImage src={IconArrowRight} />
+                Contatos <S.ArrowRightImage src={IconArrowRight} alt='Ícone de seta para a direita' loading="lazy" />
             </S.Button>
             <S.Menu onClick={() => setIsOpen(!isOpen)}>
                 <S.Svg width="23" height="23" viewBox="0 0 23 23">
@@ -82,7 +82,7 @@ export const Header: React.FC = () => {
                         variants={{
                             closed: { d: "M 2 2.5 L 20 2.5" },
                             open: { d: "M 3 16.5 L 17 2.5" }
-                          }}
+                        }}
                         animate={isOpen ? "open" : "closed"}
                     />
                     <motion.path
@@ -93,7 +93,7 @@ export const Header: React.FC = () => {
                         variants={{
                             closed: { opacity: 1 },
                             open: { opacity: 0 }
-                          }}
+                        }}
                         animate={isOpen ? "open" : "closed"}
                     />
                     <motion.path
@@ -103,10 +103,11 @@ export const Header: React.FC = () => {
                         variants={{
                             closed: { d: "M 2 16.346 L 20 16.346" },
                             open: { d: "M 3 2.5 L 17 16.346" }
-                          }}
+                        }}
                         animate={isOpen ? "open" : "closed"}
                     />
                 </S.Svg>
+                <p>Menu</p>
             </S.Menu>
             <S.Sidebar animate={isOpen ? 'open' : 'closed'} isOpen={isOpen}>
                 <S.SidebarBackground
@@ -116,7 +117,7 @@ export const Header: React.FC = () => {
                 />
                 <S.SidebarWrapper>
                     <S.Wrapper to={'/'}>
-                        <S.Logo src={LogoWhite} />
+                        <S.Logo src={LogoWhite} alt='Logo Azul' />
                         <S.Title>Ordep Dev</S.Title>
                     </S.Wrapper>
                     <S.SidebarBody>
@@ -143,7 +144,7 @@ export const Header: React.FC = () => {
                             transition={{ duration: 0.5 }}
                             whileTap={{ scale: 0.9 }}
                         >
-                            Contatos <S.ArrowRightImage src={IconArrowRight} />
+                            Contatos <S.ArrowRightImage src={IconArrowRight} alt='Ícone de seta para a direita' loading='lazy'/>
                         </S.SidebarButton>
                     </S.SidebarBody>
                 </S.SidebarWrapper>

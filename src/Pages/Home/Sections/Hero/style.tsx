@@ -36,11 +36,10 @@ export const BackgroundTop = styled.div`
     background: ${({ theme }) => theme.colors.secondary500}; 
 `
 
-export const Title = styled.h2`
+export const Title = styled.h1`
     font-weight: ${({theme})=>theme.fontWeight.bold};
     font-size: ${(({theme})=> theme.fontSizes.headline200)};
     color: ${({theme})=>theme.colors.white};
-    line-height: 77px;
 
     @media screen and (max-width: 768px){
         font-size: ${(({theme})=> theme.fontSizes.headline300)};
@@ -52,8 +51,6 @@ export const Description = styled.p`
     font-weight: ${({theme})=> theme.fontWeight.regular};
     font-size: ${({theme})=> theme.fontSizes.paragraphP2};
     color: ${({theme})=>theme.colors.white};
-    line-height: 30px;
-    letter-spacing: -0.02em;
 `
 
 export const Wrapper = styled.article`
@@ -73,6 +70,7 @@ export const HeroImage = styled.img`
     object-fit: contain; 
     pointer-events: none;
     width: 100%;
+    height: 100%;
 `;
 
 export const ImageContainer = styled.div`

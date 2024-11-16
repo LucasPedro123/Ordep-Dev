@@ -19,11 +19,10 @@ export const Wrapper = styled(motion.section)`
     gap: 24px;
 `
 
-export const Title = styled.h1`
+export const Title = styled.h2`
     font-weight: ${({theme})=> theme.fontWeight.bold};
     font-size: ${({theme})=> theme.fontSizes.headline100};
     color:  ${({theme})=> theme.colors.white};
-    line-height: 87px;
     text-align: center;
 
     @media screen and (max-width: 768px){
@@ -33,7 +32,6 @@ export const Title = styled.h1`
 export const Description = styled.h1`
     font-size: ${({theme})=> theme.fontSizes.paragraphP2};
     font-weight: ${({theme})=> theme.fontWeight.regular};
-    line-height: 30px;
     text-align: center;
     color:  ${({ theme }) => theme.colors.white};
     @media screen and (min-width: 1440px){

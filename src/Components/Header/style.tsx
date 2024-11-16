@@ -42,7 +42,7 @@ export const Wrapper = styled(Link)`
     cursor: pointer;
 `
 
-export const Title = styled.h5`
+export const Title = styled.h2`
     font-size: ${({ theme }) => theme.fontSizes.headline500};
     color: ${({theme})=> theme.colors.white};
 `
@@ -72,7 +72,8 @@ export const Button = styled.button`
     }
 `
 export const ArrowRightImage = styled.img`
-
+    width: 15px;
+    height: 15px;
 `
 
 export const Menu = styled.button`
@@ -85,6 +86,10 @@ export const Menu = styled.button`
     @media screen and (max-width: 768px){
         display: fixed;
         opacity: 1;
+    }
+
+    p{
+        opacity: 0;
     }
 `
 export const Svg = styled.svg`

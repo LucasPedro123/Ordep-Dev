@@ -44,10 +44,9 @@ export const Content = styled.div`
     }
 `
 
-export const Title = styled.h1`
+export const Title = styled.h2`
     font-weight: ${({theme})=> theme.fontWeight.bold};
     font-size: ${({theme})=> theme.fontSizes.headline100};
-    line-height: 84px;
     color: ${({ theme }) => theme.colors.gray};
     @media screen and (max-width: 768px){
         font-size: ${({theme})=> theme.fontSizes.headline300};
@@ -58,7 +57,6 @@ export const Description = styled.p`
     font-weight: ${({theme})=> theme.fontWeight.regular};
     font-size: ${({theme})=> theme.fontSizes.paragraphP2};
     color:  ${({ theme }) => theme.colors.gray};
-    line-height: 30px;
 `
 
 export const IconWrapper = styled(motion.div)`
@@ -69,6 +67,7 @@ export const IconWrapper = styled(motion.div)`
 
 export const TechIcon = styled.img`
     height: 50%;
+    width: 50%;
 `
 
 export const IconCircle1 = styled(motion.div)`

@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import {Link} from 'react-router-dom'
-import { IconPapperSubmit } from "../../assets/Images";
 
 export const Container = styled.footer`
     margin-top: 150px;
@@ -22,7 +21,7 @@ export const Linked = styled(Link)`
     gap: 10px;
 `
 
-export const Title = styled.h1`
+export const Title = styled.h2`
     font-weight: ${({theme})=> theme.fontWeight.bold};
     font-size: ${({theme})=> theme.fontSizes.headline500};
     color:  ${({theme})=> theme.colors.white};
@@ -143,12 +142,9 @@ export const Button = styled.button`
     border-radius: 5px;
 `
 
-export const ImagePaper = styled.div`
-    background-image: url(${IconPapperSubmit});
-    background-repeat: none;
-    background-size: 100%;
-    width: 20px;
-    height: 20px;
+export const ImagePaper = styled.img`
+    width: 24px;
+    height: 24px;
 `
 
 export const Wrapper = styled.div`
