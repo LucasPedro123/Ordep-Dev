@@ -18,14 +18,14 @@ const SectionMobileSolution: React.FC = () => {
                 exit={fadeInImage.exit}
                 transition={fadeInImage.transition}
             >
-                <S.Image src={SectionImage2} />
+                <S.Image src={SectionImage2} alt='Imagem de pessoas com um dispositivo móvel atrás'  loading="lazy"/>
             </S.ImageContainer>
             <S.Wrapper>
                 <S.Content>
                     <S.Title>Vamos Trabalhar Juntos</S.Title>
                     <S.Description>Ao trabalhar conosco, você faz parte de cada etapa do desenvolvimento, garantindo que seu projeto seja entregue exatamente como você imaginou — ou ainda melhor.</S.Description>
                 </S.Content>
-                <Button2 link='/' content='Saiba Mais' />
+                <Button2 link='/' content='Saiba Mais'/>
             </S.Wrapper>
         </S.Container>
     )

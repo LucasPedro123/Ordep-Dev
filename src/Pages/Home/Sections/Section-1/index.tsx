@@ -25,7 +25,7 @@ const SectionWebSolution: React.FC = () => {
                 exit={fadeInImage.exit}
                 transition={fadeInImage.transition}
             >
-                <S.Image src={ SectionImage1} />
+                <S.Image src={ SectionImage1} alt='Imagem de pessoas com telas de navegadores atrás'  loading="lazy"/>
             </S.ImageContainer>
         </S.Container>
     )
