@@ -23,36 +23,36 @@ export const SectionTech = () => {
                 <S.ConnectorBorder3 />
                 <S.RotationContainer1 >
                     <S.IconCircle1 >
-                        <S.TechIcon src={IconTechNode} />
+                        <S.TechIcon src={IconTechNode} alt='ícone do Node' loading="lazy"/>
                     </S.IconCircle1>
                 </S.RotationContainer1>
                 <S.RotationContainer2 >
                     <S.IconCircle2>
-                        <S.TechIcon src={IconTechAzure} />
+                        <S.TechIcon src={IconTechAzure} alt='ícone do Azure' loading="lazy"/>
                     </S.IconCircle2>
                 </S.RotationContainer2>
                 <S.RotationContainer3>
                     <S.IconCircle3>
-                        <S.TechIcon src={IconTechFirebase} />
+                        <S.TechIcon src={IconTechFirebase} alt='ícone do Firebase' loading="lazy"/>
                     </S.IconCircle3>
                 </S.RotationContainer3>
                 <S.IconCircle4>
-                    <S.TechIcon src={LogoBlue} />
+                    <S.TechIcon src={LogoBlue} alt='logo' loading="lazy"/>
                 </S.IconCircle4>
 
                 <S.RotationContainer4>
                     <S.IconCircle5>
-                        <S.TechIcon src={IconTechMongodb} />
+                        <S.TechIcon src={IconTechMongodb} alt='ícone do MongoDB' loading="lazy"/>
                     </S.IconCircle5>
                 </S.RotationContainer4>
                 <S.RotationContainer5>
                     <S.IconCircle6>
-                        <S.TechIcon src={IconTechAspNet} />
+                        <S.TechIcon src={IconTechAspNet} alt='ícone do AspDotNet' loading="lazy"/>
                     </S.IconCircle6>
                 </S.RotationContainer5>
                 <S.RotationContainer6>
                     <S.IconCircle7>
-                        <S.TechIcon src={IconTechReact} />
+                        <S.TechIcon src={IconTechReact} alt='ícone do React' loading="lazy"/>
                     </S.IconCircle7>
                 </S.RotationContainer6>
             </S.IconWrapper>
