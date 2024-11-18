@@ -7,6 +7,7 @@ export const Container = styled(motion.section)`
     align-items: center;
     margin-top: 150px;
     height: 100%;
+    overflow: hidden;
 
     @media screen and (max-width: 768px){
         flex-direction: column;
@@ -44,9 +45,10 @@ export const Content = styled.div`
     }
 `
 
-export const Title = styled.h2`
+export const Title = styled.h1`
     font-weight: ${({theme})=> theme.fontWeight.bold};
     font-size: ${({theme})=> theme.fontSizes.headline100};
+    line-height: 84px;
     color: ${({ theme }) => theme.colors.gray};
     @media screen and (max-width: 768px){
         font-size: ${({theme})=> theme.fontSizes.headline300};
@@ -57,6 +59,7 @@ export const Description = styled.p`
     font-weight: ${({theme})=> theme.fontWeight.regular};
     font-size: ${({theme})=> theme.fontSizes.paragraphP2};
     color:  ${({ theme }) => theme.colors.gray};
+    line-height: 30px;
 `
 
 export const IconWrapper = styled(motion.div)`
@@ -67,7 +70,6 @@ export const IconWrapper = styled(motion.div)`
 
 export const TechIcon = styled.img`
     height: 50%;
-    width: 50%;
 `
 
 export const IconCircle1 = styled(motion.div)`
@@ -80,10 +82,9 @@ export const IconCircle1 = styled(motion.div)`
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 0;
-    top: 50%;
+    left: 00%;
     transform: translateY(-50%);
-
+    top: 36%;
 `
 export const IconCircle2 = styled(motion.div)`
     width: 72.75px;
@@ -108,7 +109,7 @@ export const IconCircle3 = styled(motion.div)`
     justify-content: center;
     position: absolute;
     right: 00%;
-    top: 50%;
+    top: 36%;
     transform: translateY(-50%);
 
 `
@@ -170,40 +171,28 @@ export const ConnectorBorder1 = styled(motion.div)`
     position: absolute;
     width: 50%;
     height: 60%;
-
     border-radius: 100%;
     border: 2px dashed ${({ theme }) => theme.colors.primary500};
-    
     right: 36px;
     bottom: 0;
-
     border: 2px dashed ${({ theme }) => theme.colors.primary500};
-    
 `
 export const ConnectorBorder2 = styled.div`
     position: absolute;
     width: 50%;
-
-
     height: 60%;
     border-radius: 100%;
     border: 2px dashed ${({ theme }) => theme.colors.primary500};
-    
     left: 36px;
     bottom: 0;
-
     border: 2px dashed ${({ theme }) => theme.colors.primary500};
-
-
 `
 export const ConnectorBorder3 = styled.div`
     position: absolute;
     width: 50%;
-
     height: 60%;
     border-radius: 100%;
     border: 2px dashed ${({ theme }) => theme.colors.primary500};
-    
     top: 34px;
     left: 50%;
     transform: translateX(-50%);
@@ -231,18 +220,16 @@ export const RotationContainer3 = styled(motion.div)`
     position: absolute;
     width: 60%;
     height: 70%;
-    height: 70%;
     top: 3%;
     left: 20%;
     animation: rotateAnimation 10s linear infinite reverse;
 `;
 export const RotationContainer4 = styled(motion.div)`
     position: absolute;
-    width: 60%;
+    width: 50%;
     height: 70%;
-    left: 0%;
+    left: 36px;
     top: 35%;
-    transform: translateX(-50%);
     animation: rotateAnimation 10s linear infinite reverse;
 `;
 export const RotationContainer5 = styled(motion.div)`
@@ -251,7 +238,6 @@ export const RotationContainer5 = styled(motion.div)`
     height: 70%;
     right: 0%;
     top: 35%;
-    
     animation: rotateAnimation 10s linear infinite;
 `;
 export const RotationContainer6 = styled(motion.div)`
@@ -260,6 +246,5 @@ export const RotationContainer6 = styled(motion.div)`
     height: 70%;
     right: 0%;
     top: 35%;
-
     animation: rotateAnimation 10s linear infinite reverse;
 `;
