@@ -23,7 +23,7 @@ const sidebarVariants = {
     }
 };
 
-export const Header: React.FC = () => {
+export default function Header () {
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const SidebarItem = motion(S.SidebarItem)
 

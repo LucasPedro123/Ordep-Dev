@@ -1,7 +1,7 @@
 import { IconPapperSubmit, LogoWhite } from '../../assets/Images'
 import * as S from './style'
 
-export const Footer: React.FC = () => {
+export default function Footer() {
     return (
         <S.Container>
             <S.Content>

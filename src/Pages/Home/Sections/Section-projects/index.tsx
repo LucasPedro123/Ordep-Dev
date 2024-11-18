@@ -2,7 +2,7 @@ import { CardVariants } from '../../../../animations/animations.motion'
 import { Button2 } from '../../../../Components/Button'
 import * as S from './style'
 
-export const SectionProjects = () => {
+const SectionProjects = () => {
     const projectInfo = [
         {
             alt: 'Imagem do Projeto 1',
@@ -54,3 +54,5 @@ export const SectionProjects = () => {
         </S.Container>
     )
 }
+
+export default SectionProjects;

@@ -2,7 +2,7 @@ import { fadeInUp } from '../../../../animations/animations.motion'
 import { Button3 } from '../../../../Components/Button'
 import * as S from './style'
 
-export const SectionDivider = () => {
+const SectionDivider = () => {
 
 
     return (
@@ -21,3 +21,5 @@ export const SectionDivider = () => {
         </S.Container>
     )
 }
+
+export default SectionDivider;
