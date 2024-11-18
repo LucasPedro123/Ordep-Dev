@@ -1,14 +1,6 @@
 import { IconCardDocumentation, IconCardSupport } from "../../assets/Images"
-import { Footer } from "../../Components/Footer"
-import { Header } from "../../Components/Header"
-import Hero from "./Sections/Hero"
-import SectionWebSolution from "./Sections/Section-1"
-import SectionMobileSolution from "./Sections/Section-2"
-import { SectionDivider } from "./Sections/Section-divider"
-import { SectionForms } from "./Sections/Section-forms"
-import { SectionProjects } from "./Sections/Section-projects"
-import SectionService from "./Sections/Section-service"
-import { SectionTech } from "./Sections/Section-tech"
+import { Footer, Header } from "../../Components"
+import { Hero, SectionDivider, SectionForms, SectionMobileSolution, SectionProjects, SectionService, SectionTech, SectionWebSolution } from "./Sections"
 import * as S from './style'
 
 export const Home: React.FC = () => {
