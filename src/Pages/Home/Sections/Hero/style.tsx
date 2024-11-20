@@ -10,7 +10,6 @@ export const Container = styled.main`
     }
 
     @media screen and (max-width: 768px){
-        padding-block: 100px;
         height: 100%;
     }
 `
@@ -18,8 +17,10 @@ export const Container = styled.main`
 export const Content = styled.div`
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 100%;
+    padding-block-start: 10%;
+    @media screen and (max-width: 1440px){
+        padding-block-start: 7%;
+    }
     @media screen and (max-width: 768px){
         flex-direction:  column;
         gap: 50px;
