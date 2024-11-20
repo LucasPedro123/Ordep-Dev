@@ -1,4 +1,6 @@
 import * as S from './style'
+import { SiTypescript, SiJavascript, SiHtml5, SiCsharp } from "react-icons/si";
+import { FaCss3Alt, FaNodeJs, FaReact } from "react-icons/fa";
 
 const Skills: React.FC = () => {
     const SKillInfo = [
@@ -6,43 +8,43 @@ const Skills: React.FC = () => {
             id: 1,
             name: 'HTML',
             description: '3 anos de experiência',
-            icon: 'fa-brands fa-html5'
+            icon: <SiHtml5 />
         },
         {
             id: 2,
             name: 'CSS',
             description: '3 anos de experiência',
-            icon: 'fa-brands fa-css3-alt'
+            icon: <FaCss3Alt />
         },
         {
             id: 3,
             name: 'JavaScript',
             description: '3 anos de experiência',
-            icon: 'fa-brands fa-js'
+            icon: <SiJavascript />
         },
         {
             id: 4,
-            name: 'HTML',
+            name: 'TypeScript',
             description: '3 anos de experiência',
-            icon: 'fa-brands fa-html5'
+            icon: <SiTypescript />
         },
         {
             id: 5,
-            name: 'React',
+            name: 'C#',
             description: '3 anos de experiência',
-            icon: 'fa-brands fa-react'
+            icon: <SiCsharp />
         },
         {
             id: 6,
-            name: 'HTML',
+            name: 'React',
             description: '3 anos de experiência',
-            icon: 'fa-brands fa-html5'
+            icon: <FaReact />
         },
         {
             id: 7,
-            name: 'HTML',
+            name: 'Node',
             description: '3 anos de experiência',
-            icon: 'fa-brands fa-html5'
+            icon: <FaNodeJs />
         },
 
     ]
@@ -50,7 +52,7 @@ const Skills: React.FC = () => {
     return (
         <S.Container>
             <S.Content>
-                <S.Label>../compotências</S.Label>
+                <S.Label>../competências</S.Label>
                 <S.Title>Conhecimentos</S.Title>
             </S.Content>
             <S.CardGroup>
@@ -58,7 +60,9 @@ const Skills: React.FC = () => {
                     <S.Card key={e.id}>
                         <S.Wrapper>
                             <S.CardTitle>{e.name}</S.CardTitle>
-                            <S.Icon className={e.icon} />
+                            <S.Icon>
+                                {e.icon}
+                            </S.Icon>
                         </S.Wrapper>
                         <S.CardDescription>{e.description}</S.CardDescription>
                     </S.Card>
