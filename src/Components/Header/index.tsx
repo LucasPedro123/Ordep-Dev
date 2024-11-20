@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { IconArrowRight, LogoWhite } from '../../assets/Images'
 import * as S from './style'
 import { motion, useMotionValueEvent, useScroll } from 'framer-motion'
+import { useLocation, useNavigate } from 'react-router';
 
 const sidebarVariants = {
     open: {
@@ -23,14 +24,37 @@ const sidebarVariants = {
     }
 };
 
-export default function Header () {
+export default function Header() {
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const SidebarItem = motion(S.SidebarItem)
+    const location = useLocation();
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if (location.hash === '#hero') {
+            const mainSection = document.getElementById('hero');
+            if (mainSection) {
+                mainSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+        if (location.hash === '#contact') {
+            const mainSection = document.getElementById('contact');
+            if (mainSection) {
+                mainSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+        if (location.hash === '#services') {
+            const mainSection = document.getElementById('services');
+            if (mainSection) {
+                mainSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }, [location]);
 
     const links = [
-        { title: 'Home', path: '/' },
-        { title: 'Sobre', path: '/' },
-        { title: 'Serviços', path: '/' },
+        { title: 'Home', path: '/#hero' },
+        { title: 'Sobre', path: '/about#main' },
+        { title: 'Serviços', path: '/#services' },
         { title: 'Projetos', path: '/' }
     ]
 
@@ -52,6 +76,11 @@ export default function Header () {
         }
     });
 
+    function handleClickContact() {
+        navigate('#contact');
+    }
+
+
     return (
         <S.Container
             variants={{
@@ -66,11 +95,13 @@ export default function Header () {
                 <S.Title>Ordep Dev</S.Title>
             </S.Wrapper>
             <S.Nav>
-                <S.NavLinks to={'/'}>Produtos</S.NavLinks>
-                <S.NavLinks to={'/'}>Preços</S.NavLinks>
-                <S.NavLinks to={'/'}>Sobre</S.NavLinks>
+                {
+                    links.map((link, index) => (
+                        <S.NavLinks key={index} to={link.path}>{link.title}</S.NavLinks>
+                    ))
+                }
             </S.Nav>
-            <S.Button>
+            <S.Button onClick={()=> handleClickContact()}>
                 Contatos <S.ArrowRightImage src={IconArrowRight} alt='Ícone de seta para a direita' loading="lazy" />
             </S.Button>
             <S.Menu onClick={() => setIsOpen(!isOpen)}>
@@ -138,13 +169,13 @@ export default function Header () {
                             ))}
                         </S.SidebarContent>
                         <S.SidebarButton
-                            onClick={() => setIsOpen(false)}
+                            onClick={() => {setIsOpen(false), handleClickContact()}}
                             initial={{ opacity: 0, y: -50 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5 }}
                             whileTap={{ scale: 0.9 }}
                         >
-                            Contatos <S.ArrowRightImage src={IconArrowRight} alt='Ícone de seta para a direita' loading='lazy'/>
+                            Contatos <S.ArrowRightImage src={IconArrowRight} alt='Ícone de seta para a direita' loading='lazy' />
                         </S.SidebarButton>
                     </S.SidebarBody>
                 </S.SidebarWrapper>

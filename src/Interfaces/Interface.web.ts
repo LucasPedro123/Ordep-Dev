@@ -25,6 +25,7 @@ export interface ITheme {
         secondary1000: string;
         background: string;
         gray: string;
+        gray100: string;
         white: string;
         neutral50: string;
         neutral40: string;

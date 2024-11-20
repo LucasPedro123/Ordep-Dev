@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
     const ImageContainer = motion(S.ImageContainer)
 
     return (
-        <S.Container>
+        <S.Container id='hero'>
             <S.BackgroundTop/>
             <S.Content>
                 <Wrapper
