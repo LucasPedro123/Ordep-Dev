@@ -9,27 +9,16 @@ export const Container = styled.main`
     }
 `
 
-export const BackgroundTop = styled.div`
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    max-height: 728px;
-    height: 100%;
-    width: 100%;
-    max-width: 1920px;
-    z-index: -1;
-    background: ${({ theme }) => theme.colors.secondary500}; 
-
-    @media screen and (max-width: 1440px){
-        max-height: 604px;
-    }
-`
-
 export const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    gap: 50px;
+
+    @media screen and (max-width: 1024px){
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
 `
 
 export const Title = styled.h1`
@@ -60,9 +49,17 @@ export const SkillGroup = styled.div`
     display: grid;
     width: 50%;
     grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: row;
     gap: 8px;
-`
 
+    @media screen and (max-width: 1024px){
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+`
 export const Skill = styled.div`
     display: grid;
     place-items: center;
@@ -84,12 +81,18 @@ export const Body = styled.div`
     flex-direction: column;
     gap: 48px;
     width: 50%;
+    @media screen and (max-width: 1024px){
+        width: 100%;
+    }
 `
 
 export const LinksGroup = styled.div`
     display: flex;
     gap: 16px;
     align-items: center;
+    @media screen and (max-width: 1024px){
+        justify-content: center;
+    }
 `
 
 export const Icon = styled.i`
@@ -110,12 +113,6 @@ export const Image = styled.img`
     max-height: 400px;
 
     border-radius: 8px;
-
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 1;
-
 `
 
 export const ImageContainer = styled.div`

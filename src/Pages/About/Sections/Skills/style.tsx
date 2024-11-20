@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-    margin-top: 150px;
+    margin-block: 150px;
 `
 
 export const Label = styled.p`
@@ -32,6 +32,11 @@ export const CardGroup = styled.div`
     grid-template-columns: repeat(4, 1fr);
     gap: 8px;
     margin-top: 60px;
+
+    @media screen and (max-width: 1024px) {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  /* Ajusta o número de colunas de forma responsiva */
+        gap: 8px;
+    }
 `
 
 export const Card = styled.div`
@@ -45,17 +50,17 @@ export const Card = styled.div`
 export const CardTitle = styled.p`
     font-weight: ${(({ theme }) => theme.fontWeight.medium)};
     font-size: ${({theme})=> theme.fontSizes.paragraphP3};
-    color: #6B7280;
+    color: ${({theme})=> theme.colors.gray100};
 `
 export const CardDescription = styled.p`
     font-weight: ${(({ theme }) => theme.fontWeight.regular)};
     font-size: ${({theme})=> theme.fontSizes.paragraphP3};
-    color: #6B7280;
+    color: ${({theme})=> theme.colors.gray100};
     margin-top: 8px;
 `
 
 export const Icon = styled.i`
-    color: #6B7280;
+    color: ${({theme})=> theme.colors.gray100};
     font-size: 1.5rem;
 `
 
