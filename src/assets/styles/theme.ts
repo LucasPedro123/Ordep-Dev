@@ -26,6 +26,7 @@ export const ThemeGlobal: DefaultTheme = {
         secondary1000: '#010B17',
         background: '#f9f9f9',
         gray: '#212529',
+        gray100: '#6B7280',
         white: '#FFFFFF',
         neutral50: '#797676',
         neutral40: '#605E5E',
