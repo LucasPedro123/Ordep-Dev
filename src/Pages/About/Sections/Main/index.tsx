@@ -29,7 +29,6 @@ const Main: React.FC = () => {
 
     return (
         <S.Container id='main'>
-            <S.BackgroundTop />
             <S.Wrapper>
                 <S.Body>
                     <S.Content>
@@ -45,8 +44,6 @@ const Main: React.FC = () => {
                                     </S.Skill>
                                 ))
                             }
-
-
                         </S.SkillGroup>
                     </S.Content>
                     <S.LinksGroup>
