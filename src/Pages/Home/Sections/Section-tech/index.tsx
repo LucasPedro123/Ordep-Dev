@@ -66,7 +66,7 @@ const SectionTech = () => {
                     <S.Title>Tecnologias Mais Modernas do Mercado</S.Title>
                     <S.Description>As melhores ferramentas e frameworks utilizadas para garantir que seu projeto seja rápido, seguro e escalável. De desenvolvimento web a mobile, garantimos a melhor solução para cada desafio técnico.</S.Description>
                 </S.Content>
-                <Button1 content='Saiba Mais' link='/' />
+                <Button1 content='Saiba Mais' link='/#contact' />
             </S.Wrapper>
         </S.Container>
     )
