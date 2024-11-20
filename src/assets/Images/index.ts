@@ -2,6 +2,9 @@
 export { default as LogoWhite } from './logo-icon-white.svg'
 export { default as LogoBlue } from './logo-icon-blue.svg'
 
+// Profile
+export { default as ProfileImage } from './profile.svg';
+
 // Hero
 export { default as MainImage } from './main-image.svg'
 
