@@ -1,7 +1,21 @@
 import { IconLocation, IconPapperSubmit } from '../../assets/Images'
 import * as S from './style'
 
-export default function Forms () {
+export default function Forms() {
+    function handleClickLinks(link: string) {
+        switch (link) {
+            case 'github':
+                window.open('https://github.com/LucasPedro123', '_')
+                break;
+            case 'linkedin':
+                window.open('https://www.linkedin.com/in/lucas-pedro-fernandes/', '_')
+                break;
+            case 'instagram':
+                window.open('https://www.instagram.com/lucasfernandes4150/', '_')
+                break;
+        }
+    }
+
     return (
         <S.Content>
             <S.Wrapper>
@@ -39,9 +53,9 @@ export default function Forms () {
                     </S.Card>
                 </S.Cards>
                 <S.WrapperIcons>
-                    <S.Icon className='fa-brands fa-instagram' />
-                    <S.Icon className='fa-brands fa-github' />
-                    <S.Icon className='fa-brands fa-linkedin-in' />
+                    <S.Icon onClick={() => handleClickLinks('instagram')} className='fa-brands fa-instagram' />
+                    <S.Icon onClick={() => handleClickLinks('github')} className='fa-brands fa-github' />
+                    <S.Icon onClick={() => handleClickLinks('linkedin')} className='fa-brands fa-linkedin-in' />
                 </S.WrapperIcons>
             </S.Wrapper>
             <S.FormContainer>
