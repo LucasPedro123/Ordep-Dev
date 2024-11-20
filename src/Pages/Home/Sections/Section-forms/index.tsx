@@ -10,6 +10,7 @@ const SectionForms: React.FC = () => {
             whileInView={fadeInUp.animate}
             exit={fadeInUp.exit}
             transition={fadeInUp.transition}
+            id='contact'
         >
            <Forms/>
         </S.Container>
