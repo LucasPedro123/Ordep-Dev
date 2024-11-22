@@ -10,6 +10,10 @@ export const About: React.FC = () => {
         z-index: -1;
         background: ${({ theme }) => theme.colors.secondary500}; 
         padding-block-end: 50px;
+
+        @media screen and (min-width: 1440px){
+            width: 100vw;       
+        }
     `
 
     return (

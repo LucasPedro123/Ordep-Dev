@@ -16,7 +16,6 @@ export const GlobalStyle = createGlobalStyle`
 
     main, section, header, footer {
         padding-inline: 10%; 
-        width: 100vw;
         
         @media screen and (max-width: 1440px) {
             padding-inline: 4%; 
