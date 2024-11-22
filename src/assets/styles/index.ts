@@ -11,10 +11,12 @@ export const GlobalStyle = createGlobalStyle`
         font-family: ${({ theme }) => theme.fonts.main};
         display: grid;
         place-items: center;
+        overflow-x: hidden; 
     }
 
     main, section, header, footer {
         padding-inline: 10%; 
+        width: 100vw;
         
         @media screen and (max-width: 1440px) {
             padding-inline: 4%; 
