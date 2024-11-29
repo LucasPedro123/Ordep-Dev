@@ -1,4 +1,5 @@
 import { ProfileImage } from '../../../../assets/Images';
+import { Title } from '../../../../Components';
 import { Button3 } from '../../../../Components/Button';
 import * as S from './style'
 
@@ -32,7 +33,7 @@ const Main: React.FC = () => {
             <S.Wrapper>
                 <S.Body>
                     <S.Content>
-                        <S.Title>Lucas Pedro</S.Title>
+                        <Title content='Lucas Pedro' color='white'/>
                         <S.Description>
                             Desenvolvimento de software sob medida para dar vida às suas ideias, em apps móveis, sites ou páginas otimizadas. Crie a solução ideal para o seu negócio.
                         </S.Description>
