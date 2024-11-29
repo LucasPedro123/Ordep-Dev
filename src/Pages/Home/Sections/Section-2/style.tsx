@@ -13,15 +13,6 @@ export const Container = styled(motion.section)`
         gap: 60px;
     }
 `
-export const Title = styled.h2`
-    font-weight: ${({theme})=> theme.fontWeight.bold};
-    font-size: ${({theme})=> theme.fontSizes.headline100};
-    color: ${({ theme }) => theme.colors.gray};
-    
-    @media screen and (max-width: 768px){
-        font-size: ${({theme})=> theme.fontSizes.headline300};
-    }
-`
 
 export const Description = styled.p`
     font-weight: ${({theme})=> theme.fontWeight.regular};
@@ -44,6 +35,9 @@ export const Wrapper = styled.div`
     @media screen and (max-width: 1440px) {
         width: 528px;
     }
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
 `
 
 export const ImageContainer = styled(motion.div)`
@@ -53,9 +47,6 @@ export const Image = styled.img`
     width: 100%;
     height: 100%;
     max-width: 600px;
-    @media screen and (max-width: 1440px) {
-        width: 500px;
-    }
 
     @media screen  and (max-width: 768px) {
         width: 100%;

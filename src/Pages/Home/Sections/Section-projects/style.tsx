@@ -3,14 +3,9 @@ import styled from 'styled-components'
 
 export const Container = styled.section`
     margin-top: 150px;
-`
-
-export const Title = styled.h2`
-    font-weight: ${({theme})=> theme.fontWeight.bold};
-    font-size: ${({theme})=> theme.fontSizes.headline100};
-    text-align: center;
-    color: ${({ theme }) => theme.colors.gray};
-    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `
 
 export const Wrapper = styled.div`

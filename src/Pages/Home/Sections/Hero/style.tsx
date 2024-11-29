@@ -8,7 +8,7 @@ export const Container = styled.main`
     @media screen and (max-width: 1440px){
         height: 525px;
     }
-
+    
     @media screen and (max-width: 768px){
         height: 100%;
     }
@@ -37,21 +37,11 @@ export const BackgroundTop = styled.div`
     background: ${({ theme }) => theme.colors.secondary500}; 
 `
 
-export const Title = styled.h1`
-    font-weight: ${({theme})=>theme.fontWeight.bold};
-    font-size: ${(({theme})=> theme.fontSizes.headline200)};
-    color: ${({theme})=>theme.colors.white};
-
-    @media screen and (max-width: 768px){
-        font-size: ${(({theme})=> theme.fontSizes.headline300)};
-
-    }
-`
 
 export const Description = styled.p`
-    font-weight: ${({theme})=> theme.fontWeight.regular};
-    font-size: ${({theme})=> theme.fontSizes.paragraphP2};
-    color: ${({theme})=>theme.colors.white};
+    font-weight: ${({ theme }) => theme.fontWeight.regular};
+    font-size: ${({ theme }) => theme.fontSizes.paragraphP3};
+    color: ${({ theme }) => theme.colors.white};
 `
 
 export const Wrapper = styled.article`
@@ -84,7 +74,7 @@ export const ImageContainer = styled.div`
 `
 
 export const CardImageContainer = styled.div`
-    border: 1px solid ${({theme})=> theme.colors.primary200};
+    border: 1px solid ${({ theme }) => theme.colors.primary200};
     border-radius: 100%;
     width: 58px;
     height: 58px;

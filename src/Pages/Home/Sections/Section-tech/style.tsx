@@ -9,7 +9,7 @@ export const Container = styled(motion.section)`
     height: 100%;
     overflow: hidden;
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 1024px){
         flex-direction: column;
         gap: 50px;
     }
@@ -29,8 +29,9 @@ export const Wrapper = styled(motion.article)`
     flex-direction: column;
     gap: 60px;
     width: 50%;
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 1024px){
         width: 100%;
+        align-items: center;
     }   
 `
 
@@ -39,19 +40,9 @@ export const Content = styled.div`
     flex-direction: column;
     gap: 24px;
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 1024px){
         align-items: center;
         text-align: center;
-    }
-`
-
-export const Title = styled.h1`
-    font-weight: ${({theme})=> theme.fontWeight.bold};
-    font-size: ${({theme})=> theme.fontSizes.headline100};
-    line-height: 84px;
-    color: ${({ theme }) => theme.colors.gray};
-    @media screen and (max-width: 768px){
-        font-size: ${({theme})=> theme.fontSizes.headline300};
     }
 `
 

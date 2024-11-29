@@ -5,21 +5,13 @@ export const Container = styled(motion.section)`
     display: flex;
     justify-content: space-between;
     margin-top: 150px;
+    align-items: center;
 
     @media screen and (max-width: 768px){
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         text-align: center;
         gap: 60px;
-    }
-`
-export const Title = styled.h2`
-    font-weight: ${({theme})=> theme.fontWeight.bold};
-    font-size: ${({theme})=> theme.fontSizes.headline100};
-    color: ${({ theme }) => theme.colors.gray};
-    
-    @media screen and (max-width: 768px){
-        font-size: ${({theme})=> theme.fontSizes.headline300};
     }
 `
 
@@ -44,6 +36,9 @@ export const Wrapper = styled.div`
     @media screen and (max-width: 1440px) {
         width: 568px;
     }
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
 `
 
 export const ImageContainer = styled(motion.div)`
@@ -53,9 +48,7 @@ export const Image = styled.img`
     width: 100%;
     height: 100%;
     max-width: 600px;
-    @media screen and (max-width: 1440px) {
-        width: 500px;
-    }
+    
 
     @media screen  and (max-width: 768px) {
         width: 100%;

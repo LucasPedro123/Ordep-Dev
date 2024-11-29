@@ -9,12 +9,6 @@ export const Container = styled.section`
     margin-top: 150px;
 `
 
-export const Title = styled.h2`
-    font-weight: ${({theme})=> theme.fontWeight.bold};
-    font-size: ${({theme})=> theme.fontSizes.headline100};
-    color: ${({theme})=> theme.colors.dark};
-    text-align: center;
-`
 
 export const Description = styled.p`
     text-align: center;
@@ -41,7 +35,7 @@ export const Card = styled(motion.div)`
     display: flex;
     flex-direction: column;
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 1080px){
         width: 100%;
     }
 `
