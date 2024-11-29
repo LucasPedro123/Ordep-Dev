@@ -17,9 +17,9 @@ export const Content = styled.div`
         flex-direction: column;
         padding: 64px;
     }
-    @media screen  and (max-width: 320px) {
+    @media screen  and (max-width: 420px) {
         flex-direction: column;
-        padding: 64px;
+        padding: 16px;
     }
 `
 
@@ -88,14 +88,17 @@ export const CardWrapper = styled.div`
 
 export const ImageContainer = styled.div`
     height: 100%;
+    padding: 12px;
     border-radius: 4px;
-    background: ${({theme})=> theme.colors.primary500};
+    background: ${({ theme }) => theme.colors.primary500};
+    @media screen and (max-width: 320px) {
+        display: none;
+    }
 `
 
 export const ImageIcon = styled.img`
-    padding: 13px 15px;
-    width: 100%;
-    height: 100%;
+    width: 24px;
+    height: 24px;
 `
 
 export const Icon = styled.i`
@@ -125,7 +128,7 @@ export const CardTitle = styled.p`
 
 export const CardValue = styled.p`
     font-weight: ${({theme})=> theme.fontWeight.medium};
-    font-size: ${({theme})=> theme.fontSizes.paragraphP3};
+    font-size: ${({theme})=> theme.fontSizes.paragraphP4};
     color: ${({theme})=> theme.colors.dark};
 `
 
