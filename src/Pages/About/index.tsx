@@ -16,8 +16,13 @@ export const About: React.FC = () => {
         }
     `
 
+    const Container = styled.div`
+        width: 100vw;
+        max-width: 1920px;
+    `
+
     return (
-        <>
+        <Container>
             <BackgroundTop>
                 <Header />
                 <Main />
@@ -25,6 +30,6 @@ export const About: React.FC = () => {
             <Skills />
             <Contacts />
             <Footer />
-        </>
+        </Container>
     )
 }
