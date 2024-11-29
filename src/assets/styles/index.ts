@@ -20,10 +20,7 @@ export const GlobalStyle = createGlobalStyle`
         @media screen and (max-width: 1440px) {
             padding-inline: 4%; 
         }
-        @media screen and (max-width: 768px) {
-            padding-inline: 20px; 
-        }
-        @media screen and (max-width: 320px) {
+        @media screen and (max-width: 1024px) {
             padding-inline: 15px; 
         }
     }
