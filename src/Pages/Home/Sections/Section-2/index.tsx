@@ -1,5 +1,6 @@
 import { fadeInImage, fadeInUp } from '../../../../animations/animations.motion';
 import { SectionImage2 } from '../../../../assets/Images';
+import { Title } from '../../../../Components';
 import { Button2 } from '../../../../Components/Button';
 import * as S from './style';
 
@@ -22,7 +23,7 @@ const SectionMobileSolution: React.FC = () => {
             </S.ImageContainer>
             <S.Wrapper>
                 <S.Content>
-                    <S.Title>Vamos Trabalhar Juntos</S.Title>
+                    <Title content='Vamos Trabalhar Juntos'/>
                     <S.Description>Ao trabalhar conosco, você faz parte de cada etapa do desenvolvimento, garantindo que seu projeto seja entregue exatamente como você imaginou — ou ainda melhor.</S.Description>
                 </S.Content>
                 <Button2 link='/#contact' content='Saiba Mais'/>

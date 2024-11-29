@@ -1,5 +1,6 @@
 import { CardVariants } from '../../../../animations/animations.motion';
 import { IconServiceDesktop, IconServiceLandingpage, IconServiceMobile, IconServiceWeb } from '../../../../assets/Images';
+import { Title } from '../../../../Components';
 import * as S from './style'
 
 const SectionService: React.FC = () => {
@@ -32,7 +33,7 @@ const SectionService: React.FC = () => {
 
     return (
         <S.Container id='services'>
-            <S.Title>Our services</S.Title>
+            <Title content='Our services'/>
             <S.Description>We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health</S.Description>
             <S.Cards>
                 {

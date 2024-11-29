@@ -1,5 +1,6 @@
 import { fadeInUp } from '../../../../animations/animations.motion';
 import { IconTechAspNet, IconTechAzure, IconTechFirebase, IconTechMongodb, IconTechNode, IconTechReact, LogoBlue } from '../../../../assets/Images';
+import { Title } from '../../../../Components';
 import { Button1 } from '../../../../Components/Button';
 import * as S from './style';
 
@@ -63,7 +64,7 @@ const SectionTech = () => {
                 transition={{ duration: 0.5, delay: 0.4 }}
             >
                 <S.Content>
-                    <S.Title>Tecnologias Mais Modernas do Mercado</S.Title>
+                    <Title content='Tecnologias Mais Modernas do Mercado'/>
                     <S.Description>As melhores ferramentas e frameworks utilizadas para garantir que seu projeto seja rápido, seguro e escalável. De desenvolvimento web a mobile, garantimos a melhor solução para cada desafio técnico.</S.Description>
                 </S.Content>
                 <Button1 content='Saiba Mais' link='/#contact' />

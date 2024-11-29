@@ -1,4 +1,5 @@
 import {MainImage } from '../../../../assets/Images';
+import { Title } from '../../../../Components';
 import {Button3} from '../../../../Components/Button';
 import * as S from './style';
 import {motion} from 'framer-motion'
@@ -18,7 +19,7 @@ const Hero: React.FC = () => {
                     exit={{ opacity: 0, x: -100 }}
                     transition={{duration: 0.5}}
                 >
-                    <S.Title>Torne ideias em<br /> realidade digital</S.Title>
+                    <Title content='Torne ideias em realidade digital' color='white'/>
                     <S.Description>
                         Desenvolvimento de software sob medida para dar vida às suas ideias, em apps
                         móveis, sites ou páginas otimizadas. Crie a solução ideal para o seu negócio.

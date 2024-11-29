@@ -1,4 +1,5 @@
 import { CardVariants } from '../../../../animations/animations.motion'
+import { Title } from '../../../../Components'
 import { Button2 } from '../../../../Components/Button'
 import * as S from './style'
 
@@ -27,7 +28,7 @@ const SectionProjects = () => {
 
     return (
         <S.Container>
-            <S.Title>Projects</S.Title>
+            <Title content='Projects'/>
             <S.Wrapper>
                 <S.Cards>
                     {
