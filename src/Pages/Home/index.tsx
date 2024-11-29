@@ -19,10 +19,10 @@ export const Home: React.FC = () => {
         title: 'Soluções Personalizadas',
         description: 'Cada projeto é adaptado às necessidades e metas específicas da sua empresa.',
         image: IconCardSupport
-        }]
+    }]
 
     return (
-        <>
+        <S.Container>
             <Header />
             <Hero />
             <S.Cards>
@@ -31,9 +31,9 @@ export const Home: React.FC = () => {
                         <S.Card
                             key={index}
                             initial={{ opacity: 0, x: -50 }}
-                            whileInView={{ opacity: 1, x: 0}}
-                            exit={{opacity: 0, x: 50 }}
-                            transition={{duration: 0.5, delay: index * 0.2}}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            exit={{ opacity: 0, x: 50 }}
+                            transition={{ duration: 0.5, delay: index * 0.2 }}
                         >
                             <S.CardImageContainer>
                                 <S.CardImage src={item.image} alt={item.alt} />
@@ -53,7 +53,7 @@ export const Home: React.FC = () => {
             <SectionProjects />
             <SectionTech />
             <SectionForms />
-            <Footer/>
-        </>
+            <Footer />
+        </S.Container>
     )
 }

@@ -1,6 +1,10 @@
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
 
+export const Container = styled.div`
+    width: 100vw;
+    max-width: 1920px;
+`
 
 export const Cards = styled.div`
     display: flex;
@@ -50,6 +54,7 @@ export const CardImageContainer = styled.div`
     border-radius: 100%;
     width: 58px;
     height: 58px;
+    padding: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
