@@ -17,7 +17,9 @@ export const Title = styled.h1`
 
     @media screen and (max-width: 768px){
         font-size: ${(({theme})=> theme.fontSizes.headline300)};
-
+    }
+    @media screen and (max-width: 420px){
+        font-size: ${(({theme})=> theme.fontSizes.headline500)};
     }
 `
 
